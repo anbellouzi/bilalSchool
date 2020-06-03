@@ -25,7 +25,7 @@ SECRET_KEY = '$09yj#y8m9%b8^=c#!r_3*1c0&72l1j7&#wedhi9%a=jf1#x37'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'bilal-school.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'mtihan.herokuapp.com']
 
 
 # Application definition
