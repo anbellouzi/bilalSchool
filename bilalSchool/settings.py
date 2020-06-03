@@ -51,10 +51,11 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'bilalSchool.urls'
-STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Extra places for collectstatic to find static files.
+STATIC_URL = '/static/'
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
