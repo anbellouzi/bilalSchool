@@ -53,6 +53,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'bilalSchool.urls'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 TEMPLATES = [
     {
