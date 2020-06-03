@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% load static %}
+
+		<!-- Main -->
+			<div id="main">
+				<div class="inner">
+					<header>
+						<h1>This is {{course.name}} Course<br /></h1>
+						
+						<p>{{course.description}}</p>
+
+						<span>Published {{course.pub_date }}</span>
+					</header>
+
+					<h2>Lessons</h2>
+
+					<section class="tiles">
+						
+
+						{% for lesson in lessons %}
+						
+							{% include 'school/partials/card_lesson.html' %}
+
+						{% endfor %}
+					</section>
+				</div>
+			</div>
+
+{% endblock %}
