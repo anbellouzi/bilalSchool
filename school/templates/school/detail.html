@@ -8,23 +8,18 @@
 			<div id="main">
 				<div class="inner">
 					<header>
-						<h1>This is {{course.name}} Course<br /></h1>
-						
-						<p>{{course.description}}</p>
+						<h1>This is {{course.name }} {{lesson.name}} Lesson<br /></h1>
 
-						<span>Published {{course.pub_date }}</span>
+						<p>{{lesson.description}}</p>
+						<img src="{{lesson.image}}" alt="">
+
+						<span>Published {{lesson.video }}</span>
 					</header>
 
-					<h2>Lessons</h2>
+					<section class="tiles">						
 
-					<section class="tiles">
-						
+						<iframe width="560" height="315" src="{{lesson.video}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-						{% for lesson in lessons %}
-						
-							{% include 'school/partials/card_lesson.html' %}
-
-						{% endfor %}
 					</section>
 				</div>
 			</div>

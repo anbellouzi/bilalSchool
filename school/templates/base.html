@@ -30,7 +30,7 @@
 					<!-- Nav -->
 						<nav>
 							<ul>
-								<li><a href="#menu">Menu</a></li>
+                                <li><a href="#menu">Menu</a></li>
 							</ul>
 						</nav>
 
@@ -42,9 +42,9 @@
 				<h2>Menu</h2>
 				<ul>
                     <li><a href="/">Home</a></li>
-                    {% if courses %}
-                        {% for course in courses %}
-                        <li><a href="{% url 'school:detail' course.name %}">{{course.name}}</a></li>
+                    {% if topics %}
+                        {% for   topic in topics %}
+                        <li><a href="{% url 'school:courses' topic.name %}">{{topic.name}}</a></li>
                         {% endfor %}
                     {% endif %}
 				</ul>

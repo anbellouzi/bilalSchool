@@ -2,7 +2,7 @@
     <span class="image">
         <img src="{{ lesson.image }}" alt="" />
     </span>
-    <a href="generic.html">
+    <a href="{% url 'school:lesson_detail' topic.name course.name lesson.name %}">
         <h2>{{ lesson.name }}</h2>
         <div class="content">
             <h2>{{ lesson.description }}</h2>

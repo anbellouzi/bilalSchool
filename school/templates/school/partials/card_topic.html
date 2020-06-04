@@ -1,0 +1,11 @@
+<article class="style3">
+    <span class="image">
+        <img src="{{ topic.image }}" alt="" />
+    </span>
+    <a href="{% url 'school:courses' topic.name %}">
+        <h2>{{ topic.name }}</h2>
+        <div class="content">
+            <p>{{ topic.description }}</p>
+        </div>
+    </a>
+</article>

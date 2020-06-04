@@ -5,6 +5,9 @@ from . import views
 app_name = 'school' 
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('course/<str:course_name>/', views.detail, name='detail'),
+    path('', views.topics, name='topics'),
+    path('<str:topic_name>/courses', views.courses, name='courses'),
+    path('<str:topic_name>/<str:course_name>/lessons/', views.lessons, name='lessons'),
+    path('<str:topic_name>/<str:course_name>/<str:lesson_name>/', views.details, name='lesson_detail'),
+    
 ]
